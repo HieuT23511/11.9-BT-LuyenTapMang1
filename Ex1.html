@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 1</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  let arrLength = 10;
+  let count=0;
+  for (let i = 0; i < arrLength; i++) {
+    arr[i]= prompt(`${arrLength - i} Elements left `);
+    arr.push(arr[i]);
+    if (Number.isInteger(+arr[i])){
+      if (arr[i] >=10){
+        count++;
+      }
+    }
+    else {
+      prompt('Please enter the Interger Number again!')
+      arr = 'undefinded'
+    break}
+  }
+  document.write(`The array [ ${arr} ] have ${count} Elements >=10.`)
+
+</script>
+</body>
+</html>

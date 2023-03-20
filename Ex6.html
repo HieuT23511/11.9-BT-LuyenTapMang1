@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+</head>
+<body>
+<script>
+    const arr = [];
+
+    function creatNewArr() {
+        let arrLength = prompt('Enter Length of Array:');
+        for (let i = 0; i < arrLength; i++) {
+            let elements = prompt(`${arrLength - i} Elements left`);
+            arr.push(elements);
+        }
+    }
+
+    creatNewArr();
+    let numberV = prompt('Enter numberV: ');
+    // console.log(numberV)
+    console.log(arr)
+    // console.log(arr.indexOf(numberV));
+    if (arr.indexOf(numberV) === -1) {
+        alert(`${numberV} is not in array`);
+    } else {
+        alert(`${numberV} is in array at index: ${arr.indexOf(numberV)}`)
+    }
+</script>
+</body>
+</html>

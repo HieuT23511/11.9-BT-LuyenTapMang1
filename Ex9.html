@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+</head>
+<body>
+<script>
+    const arrA = [];
+    let arrLength = prompt('Enter Length of Array:');
+    for (let i = 0; i < arrLength; i++) {
+        let elements = prompt(`${arrLength - i} Elements of Array A left`);
+        arrA.push(elements);
+    }
+    const arrB = [];
+    for (let i = 0; i < arrLength; i++) {
+        let elements = prompt(`${arrLength - i} Elements of Array B left`);
+        arrB.push(elements);
+    }
+    let arrC = arrA.concat(arrB)
+    document.write(`Array A: ${arrA} <br> Array B: ${arrB}
+<br> Array C (need to find) is ${arrC} `)
+
+</script>
+</body>
+</html>
